@@ -27,9 +27,7 @@ function Kill_Process{
             $aliveProcess.CloseMainWindow() | Out-Null
             Start-Sleep -Seconds 3
             if (!$aliveProcess.HasExited) {
-                #using both methods seems to be more reliable
                 $aliveProcess | Stop-Process -Force
-                Stop-Process -name $p -force
             }
         }else{
             Write-Host "$p wasn't running"
