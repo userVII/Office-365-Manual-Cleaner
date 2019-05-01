@@ -10,6 +10,27 @@
         Last Update:  05-01-2019
 #>
 
+$processNames = @(
+                    "Lync", "Outlook"
+                    )
+
+foreach($p in $processNames){
+    $aliveProcess = Get-Process $p -ErrorAction SilentlyContinue
+    if ($aliveProcess) {
+        Write-Host "Stopping $p process" -ForegroundColor Yellow
+        $aliveProcess.CloseMainWindow() | Out-Null
+        # If the kill wasn't graceful
+        Start-Sleep -Seconds 3
+        if (!$aliveProcess.HasExited) {
+            #using both methods seems to be more reliable
+            $aliveProcess | Stop-Process -Force
+            Stop-Process -name $p -force
+        }
+    }else{
+        Write-Host "$p wasn't running"
+    }
+}
+
 $users = Get-ChildItem -Path "C:\Users"
 
 foreach($user in $users){
