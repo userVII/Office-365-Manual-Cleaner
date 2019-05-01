@@ -16,4 +16,8 @@ start asking for passwords and won't take credentials. This will fix that.
 # Office365Photo To AD photo.ps1
 Powershell script to get an Office 365 image and insert it into the users AD account
 
-Requires the AD module in powershell which you can get my installing administrative tools. Should just be able to edit the 'SEARCHBASE' to something like "OU=something,DC=company,DC=com" and go to town :)
+Requires the AD module in powershell which you can get by installing administrative tools. 
+
+https://www.microsoft.com/en-us/download/details.aspx?id=45520
+
+Should just be able to edit the 'SEARCHBASE' to something like "OU=something,DC=company,DC=com" and go to town :)
