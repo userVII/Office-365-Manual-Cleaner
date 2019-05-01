@@ -22,9 +22,7 @@ foreach($p in $processNames){
         # If the kill wasn't graceful
         Start-Sleep -Seconds 3
         if (!$aliveProcess.HasExited) {
-            #using both methods seems to be more reliable
             $aliveProcess | Stop-Process -Force
-            Stop-Process -name $p -force
         }
     }else{
         Write-Host "$p wasn't running"
