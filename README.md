@@ -10,5 +10,5 @@ The steps for the uninstall were taken from here and adapted to a PowerShell scr
 https://support.office.com/en-us/article/manually-uninstall-office-4e2904ea-25c8-4544-99ee-17696bb3027b
 
 # SkypeSIPCleaner.ps1
-Small utility to clan off all Skype SIP files on a PC. Sometimes in a domain environment Skype for Business will
+Small utility to clean off all Skype SIP files on a PC. Sometimes in a domain environment Skype for Business will
 start asking for passwords and won't take credentials. This will fix that.
