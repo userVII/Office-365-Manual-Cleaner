@@ -71,7 +71,7 @@ function Remove_InstallDirectories{
             Write-Host "Removing $dirRemoval" -ForegroundColor Yellow
             Remove-Item -LiteralPath $dirRemoval -Force -Recurse
         }else{
-            Write-Host "$dirRemoval is alreeady removed"
+            Write-Host "$dirRemoval is already removed"
         }
     }
 
@@ -80,7 +80,7 @@ function Remove_InstallDirectories{
             Write-Host "Removing $fileRemoval" -ForegroundColor Yellow
             Remove-Item -LiteralPath $fileRemoval -Force
         }else{
-            Write-Host "$fileRemoval is alreeady removed"
+            Write-Host "$fileRemoval is already removed"
         }
     }
 }
