@@ -13,7 +13,7 @@ https://support.office.com/en-us/article/manually-uninstall-office-4e2904ea-25c8
 Small utility to clean off all Skype SIP files on a PC. Sometimes in a domain environment Skype for Business will
 start asking for passwords and won't take credentials. This will fix that.
 
-# Office365Photo To AD.ps1
+# Import_Office365PhotoToAD.ps1
 Powershell script to get an Office 365 image and insert it into the users AD account
 
 Requires the AD module in powershell which you can get by installing administrative tools. 
