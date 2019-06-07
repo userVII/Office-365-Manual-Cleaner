@@ -1,7 +1,7 @@
 # Utility scripts for Office 365
 A collection of scripts to aid with Office 365 installs
 
-# Office365InstallCleaner.ps1
+# Clean_Office365Install.ps1
 Powershell script to manually clean up Office 365 installations. 
 We have found sometimes upgrading from a basic install to a Publisher Access install hangs and needs a good clean/uninstall.
 
